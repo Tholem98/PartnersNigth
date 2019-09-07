@@ -6,8 +6,18 @@ body {
   width: 100%;
 }
 
-#app {
+#root {
   height: inherit;
+}
+
+.tituloProyecto {
+  font-weight: 700;
+}
+
+.intereses {
+  background-color: #9b9b9b;
+  border-radius: 50%;
+  width: 10%;
 }
 
 .landingBackground {
@@ -400,4 +410,102 @@ option[selected] {
   color: #044087;
   font-size: 14px;
   font-family: "Helvetica";
+}
+
+.gridPhoto {
+  display: grid;
+  grid-template-columns: 0.3fr 0.7fr;
+  padding-left: 2%;
+  margin-bottom: 2%;
+}
+
+.colorTrial {
+  background-color: purple;
+}
+
+.paddingGral {
+  padding: 1%;
+  box-shadow: 0 12px 12px 0 #ededed;
+  border: transparent;
+  border-radius: 10px;
+  font-family: Nunito;
+}
+
+.roundedPhoto {
+  border-radius: 50%;
+  height: 5em;
+  width: 5em;
+  justify-self: center;
+}
+
+.textList {
+  justify-self: left;
+  align-self: center;
+}
+
+.textList h2 {
+  color: black;
+  text-align: left;
+  margin: 0;
+  font-size: 1.4em;
+}
+
+.textList p {
+  color: #044087;
+  text-align: left;
+  margin: 0;
+  font-size: 1.15em;
+}
+
+.listTitle {
+  padding-left: 1%;
+}
+
+.box {
+  width: 25%;
+  padding: 20px;
+  box-shadow: 0 2px 10px 0 #ededed;
+}
+
+.connect-button {
+  background-color: transparent;
+  -moz-border-radius: 28px;
+  -webkit-border-radius: 28px;
+  border-radius: 28px;
+  border: 2px solid black;
+  display: inline-block;
+  cursor: pointer;
+  color: black;
+  font-family: Arial;
+  font-size: 18px;
+  padding: 16px 31px;
+  text-decoration: none;
+  text-shadow: 0px 0px 0px #2f6627;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.button-div {
+  text-align: center;
+  top: 50px;
+  position: relative;
+}
+
+.titles-have-need {
+  font-size: 14px;
+  color: #4a4a4a;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+ul#bullet-cancel {
+  list-style-image: url("../public/bullet-cancel.jpg");
+}
+
+ul#bullet-check {
+  list-style-image: url("../public/bullet-check.jpg");
+}
+
+li {
+  margin-top: 5px;
 }
