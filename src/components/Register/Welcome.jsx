@@ -6,9 +6,10 @@ class Welcome extends Component{
 
         return(
         <div>
-            <h1 className="bienvenido">Bienvenido!</h1>
-            <p className="name">*Tu nombre*</p>
-            <p className="conocernos">Completa los siguientes datos para conocernos mejor</p>
+            <h1>
+                Bienvenido!<br/>*Tu nombre*
+            </h1>
+            <p>Estas a un paso de formar parte de esta comunidad! completa algunos datos para que podamos conocerte mejor.</p>
         </div>
         )
     }
