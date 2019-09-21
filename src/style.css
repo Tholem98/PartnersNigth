@@ -1,7 +1,166 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
-@import url("_base.css");
-@import url("_buttons.css");
-@import url("_grids.css");
+
+.partners {
+	width: 120px;
+	height: 100%;
+    padding-top: 20px;
+    box-sizing: border-box;
+    text-align: center;
+	float: left;
+	position: fixed;
+	background: #0505ad;
+	background: linear-gradient(45deg, #0505ad 0%, #5577ff 80%);
+}
+
+.content {
+	width: calc(100% - 120px); 
+	float: left;
+	background: #ffffff;
+	margin-left: 120px;
+}
+
+.center {
+	width: 36%; 
+	margin: 1%; 
+	padding: 1%; 
+	float: left;
+}
+
+.aside {
+	width: 28%;
+	margin: 1%;
+	float: left;
+}
+
+.aside2 {
+	width: 28%;
+	margin: 1%;
+	float: left;
+}
+
+.Box-content {
+	border-radius: 20px;
+	padding: 20px; 
+	-webkit-box-shadow: 2px 0px 17px -2px rgba(204,204,204,1);
+	-moz-box-shadow: 2px 0px 17px -2px rgba(204,204,204,1);
+	box-shadow: 2px 0px 17px -2px rgba(204,204,204,1); 
+	margin-bottom: 20px;
+}
+
+.loginBtn{
+	margin: 5em;
+	box-sizing: border-box;
+  position: relative;
+  width: 15em; /* - apply for fixed size*/
+  margin: 0.2em;
+  padding: 0 15px 0 46px;
+  border: none;
+  text-align: left;
+  line-height: 34px;
+  white-space: nowrap;
+  border-radius: 0.2em;
+  font-size: 16px;
+  color: #FFF;
+}
+
+.loginGoogle{
+  /*font-family: "Roboto", Roboto, arial, sans-serif;*/
+  background: #DD4B39;
+}
+.loginGoogle:before {
+	border-right: #BB3F30 1px solid;
+	background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_google.png') 6px 6px no-repeat;
+}
+.loginGoogle:hover,
+.loginGoogle:focus {
+	background: #E74B37;
+}
+
+.loginFacebook{
+	background-color: #4C69BA;
+	background-image: linear-gradient(#4C69BA, #3B55A0);
+	/*font-family: "Helvetica neue", Helvetica Neue, Helvetica, Arial, sans-serif;*/
+	text-shadow: 0 -1px 0 #354C8C;
+}
+.loginFacebook:before {
+	border-right: #364e92 1px solid;
+	background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_facebook.png') 6px 6px no-repeat;
+}
+.loginFacebook:hover,
+.loginFacebook:focus {
+	background-color: #5B7BD5;
+	background-image: linear-gradient(#5B7BD5, #4864B1);
+}
+
+.button {
+	background: #505adc;
+	padding: 10px;
+	text-align: center;
+	border-radius: 40px;
+	color: #ffffff;
+	width: 145px;
+	display: inline-block;
+	cursor: pointer;
+	margin-right: 20px;
+}
+
+.button:hover {
+	background: #6e78fa;
+}
+
+.button-outline {
+	background: #ffffff;
+	border: 1px solid #3b3b3b;
+	padding: 10px;
+	text-align: center;
+	border-radius: 40px;
+	width: 145px;
+	display: inline-block;
+	cursor: pointer;
+	margin-right: 20px;
+}
+
+.button-outline:hover {
+	border: 1px solid #a5a5a5;
+	color: #a5a5a5;
+}
+
+body {
+	font-family:"source-code-pro", 
+	sans-serif; font-size: 14px; 
+	line-height: 24px; 
+	color: #3b3b3b; 
+	font-weight: 200;
+}
+
+h1, h2, h3, h4 {
+	font-family: "source-sans-pro",
+	sans-serif; 
+	font-weight: 200;
+}
+
+h1 {
+	font-size: 50px;
+	line-height: 50px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+p {
+	margin: 20px 0 20px 0;
+}
+
 
 i{
   font-family: "FontAwesome"
@@ -219,6 +378,7 @@ body {
 }
 
 .input {
+  border-bottom: 1px solid #333333;
   height: 45px;
   width: 331px;
   background-color: #fbfbff;

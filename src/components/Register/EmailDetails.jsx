@@ -18,20 +18,22 @@ class EmailDetails extends Component{
         const {values}=this.props
         
         return(
-        <div>
-            <Welcome/>
-            <form action="">
-                <p className="pregunta">1. Confirmanos tu email</p>
-                <input
-                className="input" 
-                type="text"
-                name='email'
-                onChange={this.props.handleChange}
-                defaultValue={values.email} />
-                <div>
-                    <button className="continuar" onClick={this.saveAndContinue}>Siguiente Pregunta</button>
+        <div class="content">
+            <div class="center container">
+                <div style={{marginBottom: "10px"}}>
+                    Vale por un logo    
                 </div>
-            </form>
+                <Welcome/>
+                <form action="">
+                    <p>1. Confirmanos tu email</p>
+                    <input type="text" class="input" name="nombre" defaultValue={values.email} onChange={this.props.handleChange} placeholder="UX designer, FullStack develoer"></input>
+                    <div class="controles">
+                        {/* <button className="continuar" onClick={this.saveAndContinue}>Siguiente Pregunta</button> */}
+					    <div class="button-outline">Atras</div>
+					    <div class="button">Continuar</div>
+                    </div>
+                </form>
+            </div>
         </div>
         )
 

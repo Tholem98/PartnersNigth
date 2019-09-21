@@ -1,4 +1,4 @@
-import 'babel-polyfill';
+import "babel-polyfill";
 import React from "react";
 import { Route, Redirect, Switch, Link } from "react-router-dom";
 // import {} from 'react-redux'
@@ -11,7 +11,7 @@ import HaveNeed from "./HaveNeed";
 import Social from "./Social";
 import Project from "./Project";
 import Info from "./Info";
-import "../../back/public/css/style.css";
+import "../style.css";
 
 class MainRouter extends React.Component {
   constructor(props) {
