@@ -1,10 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default ({ profile }) => (
+export default ({/* profile */}) => (
   <div>
-    <div className="have-need">
-      <div className="box">
         <h2 className="titles-have-need"> TENGO </h2>
         {/* {profile.tengo.map(tengo => ( */}
         <div
@@ -38,6 +36,4 @@ export default ({ profile }) => (
           </Link>
         </div>
       </div>
-    </div>
-  </div>
 );

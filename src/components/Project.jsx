@@ -1,50 +1,51 @@
-import React, { Component } from "react";
+import React, {Component} from 'react'
+import ListaComponent from "./ListaReut";
+import HaveNeed from "./HaveNeed";
+import Social from "./Social";
 
-import Lista from "./ListaReut";
-import "../styles.css";
+class Profile extends Component{
 
-class Proyect extends Component {
-  render() {
-    return (
-      <div>
-        <div>
-          <div style={{ float: "right", marginRight: "1em" }}>
-            <p className="like" />
-          </div>
-          <div style={{ float: "right", marginRight: "1em" }}>
-            <p className="comment" />
-          </div>
-          <h1 className="tituloProyecto">Mupey</h1>
-        </div>
-        <p className="claseProyecto">App de pagos</p>
-        <p className="pitchProyecto">
-          Saliste a comer con tus amigos y pagar la cuenta es un bardo. Con
-          Mupey la app que divide todo por vos pagar la cuenta se hace solo con
-          un click.
-        </p>
-        <p className="descripcionProyecto">
-          Cansado de ir a comer con tus amigos y las cuentas nunca dan? Con
-          Mupay se acabaron los problemas esta App es tu aliada a la hora de
-          salir a comer con tus amigos.
-        </p>
-        <p>TENGO</p>
-        <p className="queTengo"> Un equipo conformado</p>
-        <p className="queTengo"> MVP testeable</p>
-        <p className="queTengo"> Ronda de inversiones</p>
-        <p>NECESITO</p>
-        <p className="queNecesito">Un experto en Marketing</p>
-        <p className="queNecesito"> Contador</p>
+render(){
 
-        <p>GRAFICO</p>
+    return(
+<div>
+			<div className="partners">
+				<img src="../img/partners_white.svg"  width="90px" height="35px" alt="Partners"/>
+			</div>
 
-        <Lista title="Colaboradores" />
-        <p>EL EQUIPO</p>
-        <img src="" alt="Perfil" />
-        <p className="teamName">Camila de la Torre</p>
-        <p className="teamRole">CEO</p>
-      </div>
-    );
-  }
+	<div className="content">
+		<div className="center">
+            <div className="gridPhoto">
+                <div className="roundedPhoto colorTrial" />
+                    <div className="textList">
+                        <h2>Mupey</h2>
+                        <p>Especialidad</p>
+            		</div>
+        	</div>		
+			<p>
+			Partners es una red social colaborativa que conecta emprendedores con ganas de crecer y y potenciar sus proyectos.
+			En este espacio vas a poder compartir tus proyectos, dar y recibir feedback de otros emprendedores. Intercambiar conocimientos y promover una cultura colaborativa.
+			</p>
+            {Social({})}
+		</div>
+			<div className="aside">		
+				<div className="Box-content">
+          			{HaveNeed({})}
+				</div>
+			</div>
+
+			<div className="aside2">
+    			<div className="Box-content">
+					{ListaComponent({title:'Estado del \r\nproyecto'})}
+				</div>
+			<div className="Box-content">
+				{ListaComponent({list:['a','b','c','d'],title:'Colaboraciones'})}
+			</div>
+			
+		</div>
+	</div>
+</div>
+)}
 }
 
-export default Proyect;
+export default Profile
